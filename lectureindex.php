@@ -22,7 +22,8 @@ and open the template in the editor.
     $ll = new LiveLecture('@Adactio at AEA'
             , '1 h 5 m'
             , 'Jeremy Keith'
-            , 'Web Design Principles' , 'lecture');
+            , 'Web Design Principles'
+            , 'lecture');
     $book->display();
     $film->display();
     $ll->display();

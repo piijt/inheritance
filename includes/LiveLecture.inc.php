@@ -9,6 +9,8 @@ class LiveLecture extends Product {
     $this->lecturer = $lecturer;
     $this->topic = $topic;
     $this->duration = $duration;
+    $this->title = $title;
+    $this->type = $type;
   }
 
   public function getLecturer() {
@@ -24,7 +26,9 @@ class LiveLecture extends Product {
   }
 
   public function display() {
-  printf("<p>Lecturer: %s (%s det er en lang time) %s\n"
+  printf("<p>Lecturer: %s %s %s %s %s \n"
+          , $this->getProductType()
+          , $this->getTitle()
           , $this->getLecturer()
           , $this->getDuration()
           , $this->getTopic());
