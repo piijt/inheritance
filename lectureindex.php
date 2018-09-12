@@ -17,15 +17,11 @@ and open the template in the editor.
     </head>
     <body>
 <?php
-    $book = new Book('IT Kommunikation', 172);
-    $film = new DVD('@Adactio at AEA', '1 h 5 m');
     $ll = new LiveLecture('@Adactio at AEA'
-            , '1 h 5 m'
             , 'Jeremy Keith'
             , 'Web Design Principles'
-            , 'lecture');
-    $book->display();
-    $film->display();
+            , ''
+            , '(1 h 5 m hours)');
     $ll->display();
 ?>
     </body>
